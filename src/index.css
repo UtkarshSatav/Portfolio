@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Disable overscroll behavior */
+html, body {
+  overscroll-behavior: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626; /* red-600 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c; /* red-700 */
+}
