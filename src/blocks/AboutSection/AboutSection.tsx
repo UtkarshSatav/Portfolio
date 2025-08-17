@@ -32,8 +32,8 @@ const AboutSection = () => {
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-red-600" style={{ fontFamily: 'monospace' }}>MY JOURNEY</h3>
                 <div className="space-y-1" style={{ fontFamily: 'monospace', fontSize: '0.9rem' }}>
-                  <p>• Started coding in 2018 with Python and Java</p>
-                  <p>• Transitioned to web development in 2020</p>
+                  <p>• Started coding in 2022 with Python and Java</p>
+                  <p>• Transitioned to web development in 2024</p>
                   <p>• Built 50+ projects across various domains</p>
                   <p>• Worked with startups and established companies</p>
                   <p>• Contributed to open-source projects</p>
