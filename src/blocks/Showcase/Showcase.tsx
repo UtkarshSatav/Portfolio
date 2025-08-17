@@ -6,7 +6,7 @@ const Showcase: React.FC = () => {
       title: 'KT',
       description: 'E-commerce Platform',
       subtitle: 'Seamless online shopping experience',
-      videoUrl: '/src/assets/REC-20250811201118.mp4',
+      videoUrl: '/public/REC-20250811201118.mp4',
       thumbnail: '/images/project3-thumb.jpg',
       year: '2024',
       role: 'UI/UX Designer & Developer'
@@ -15,7 +15,7 @@ const Showcase: React.FC = () => {
       title: 'Doctors Portfolio',
       description: 'Portfolio Website',
       subtitle: 'A professional portfolio for medical professionals',
-      videoUrl: '/src/assets/REC-20250811200812.mp4',
+      videoUrl: '/public/REC-20250811200812.mp4',
       thumbnail: '/images/project2-thumb.jpg',
       year: '2024',
       role: 'Frontend Developer'
@@ -24,7 +24,7 @@ const Showcase: React.FC = () => {
       title: 'AXM',
       description: 'Full Stack Web Application',
       subtitle: 'A modern web application built with cutting-edge technologies',
-      videoUrl: '/src/assets/REC-20250727000637.mp4',
+      videoUrl: '/public/REC-20250727000637.mp4',
       thumbnail: '/images/project1-thumb.jpg',
       year: '2023',
       role: 'Full Stack Developer'
