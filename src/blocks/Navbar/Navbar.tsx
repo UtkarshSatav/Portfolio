@@ -80,7 +80,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="w-px h-6 bg-gray-200 mx-2"></div>
+            <div className="w-px h-6  mx-2"></div>
 
           </div>
 
