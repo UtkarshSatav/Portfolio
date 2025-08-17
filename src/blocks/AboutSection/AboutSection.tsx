@@ -1,6 +1,15 @@
 import Cubes from '../Cubes/Cubes';
 
 const AboutSection = () => {
+  const handleDownloadResume = () => {
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.href = '/Utkarsh-Resume.pdf';
+    link.download = 'Utkarsh-Satav-Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section id="about-section" className="relative w-full min-h-screen bg-black text-red-600 py-16 overflow-hidden">
         <div className="mb-16 ">
@@ -57,7 +66,11 @@ const AboutSection = () => {
               </div>
               
               <div className="pt-4">
-                <button className="px-4 py-2 border border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-colors duration-300 text-xs tracking-wider" style={{ fontFamily: 'monospace' }}>
+                <button 
+                  onClick={handleDownloadResume}
+                  className="px-4 py-2 border border-red-600 text-red-600 hover:bg-red-600 hover:text-black transition-colors duration-300 text-xs tracking-wider" 
+                  style={{ fontFamily: 'monospace' }}
+                >
                   DOWNLOAD RESUME
                 </button>
               </div>
