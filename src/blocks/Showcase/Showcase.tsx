@@ -32,7 +32,7 @@ const Showcase: React.FC = () => {
   ];
 
   return (
-    <section className="relative w-full bg-black">
+    <section className="relative w-full mx-auto p-10 bg-black" style={{ boxShadow: '0 0 10px rgba(252, 6, 6, 0.7)' }}>
       {projects.map((project, index) => (
         <div 
           key={index} 

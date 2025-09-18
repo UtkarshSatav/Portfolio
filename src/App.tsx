@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './blocks/Navbar/Navbar';
 import ThermaText from './blocks/ThermaText/ThermaText';
-import Showcase from './blocks/Showcase/Showcase';
 import Services from './blocks/Services/Services';
 import AboutSection from './blocks/AboutSection/AboutSection';
 import WorkSection from './blocks/WorkSection/WorkSection';
@@ -28,9 +27,6 @@ function App() {
                   </div>
                 </div>
               </div>
-              
-              {/* Showcase Section */}
-              <Showcase />
               
               {/* Services Section */}
               <Services />
