@@ -18,18 +18,18 @@ const services = [
 ];
 
 const technologies = [
-    "React",
-    "Next.js",
-    "Node.js",
-    "TypeScript",
-    "Three.js",
-    "GSAP",
-    "Figma",
-    "Adobe Creative Suite",
-    "Blender",
-    "After Effects",
-    "WebGL",
-    "GraphQL"
+    { name: "React", icon: "react" },
+    { name: "Next.js", icon: "nextjs" },
+    { name: "Node.js", icon: "nodejs" },
+    { name: "TypeScript", icon: "ts" },
+    { name: "Three.js", icon: "threejs" },
+    { name: "GSAP", icon: "bxl bx-gsap", type: "icon" },
+    { name: "Figma", icon: "figma" },
+    { name: "Photoshop", icon: "ps" },
+    { name: "Illustrator", icon: "ai" },
+    { name: "Blender", icon: "blender" },
+    { name: "After Effects", icon: "ae" },
+    { name: "GraphQL", icon: "graphql" }
 ];
 
 export default function Services() {
@@ -84,12 +84,23 @@ export default function Services() {
                             <h3 className="text-2xl font-bold">Technologies</h3>
                             <div className="flex flex-wrap gap-3">
                                 {technologies.map((tech, index) => (
-                                    <span
+                                    <div
                                         key={index}
-                                        className="inline-flex items-center justify-center px-4 py-2 rounded-full border border-border bg-background text-sm font-medium hover:border-primary hover:text-primary transition-all hover:-translate-y-1"
+                                        className="hover:-translate-y-1 transition-transform cursor-pointer flex items-center justify-center p-2"
+                                        title={tech.name}
                                     >
-                                        {tech}
-                                    </span>
+                                        {/* @ts-ignore */}
+                                        {tech.type === "icon" ? (
+                                            <i className={`${tech.icon} text-5xl text-foreground`} />
+                                        ) : (
+                                            /* eslint-disable-next-line @next/next/no-img-element */
+                                            <img
+                                                src={`https://skillicons.dev/icons?i=${tech.icon}`}
+                                                alt={tech.name}
+                                                className="h-12 w-12"
+                                            />
+                                        )}
+                                    </div>
                                 ))}
                             </div>
                         </motion.div>
