@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.1.0",
+    "clsx": "^2.1.1",
+    "motion": "^12.23.25",
+    "next": "^15.5.9",
+    "next-sitemap": "^4.2.3",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-use": "^17.5.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.0.0"
+  }
+}

@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-accent: var(--accent);
+  --color-darkBg: var(--color-darkBg);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-darkMuted: var(--darkMuted);
+  --color-hover: var(--hover);
+  --color-techstack: var(--techstack);
+  --color-darkcard: var(--darkcard);
+  --color-nav-icon: var(--navIcon);
+  --color-stroke: var(--strokeWidth);
+  --color-lightborder: var(--border);
+  --shadow-sh2: 0 0 0 1px var(--shad, transparent);
+  --shadow-sh: 0px 2px 3px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+:root {
+  --bg: rgb(11, 13, 14);
+  --muted: oklch(0.5555 0 0);
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  --accent: lab(49.5493 79.8381 2.31768);
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+  /* background-image: linear-gradient(to right, #4a4a4a12 1px, transparent 1px),
+    linear-gradient(to bottom, #49494912 1px, transparent 1px);
+  background-size: 40px 40px; */
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  font-family: var(--font-jetbrains-mono);
+  flex-direction: column;
+}
+
+.dot-mask {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 16px 16px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    #000 60%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    #000 60%,
+    transparent 100%
+  );
+}
+
+.intro {
+  line-height: 1.2rem;
+}
+.cen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bo {
+  border: 1.5px solid red;
+}
+.tech-grid-bg {
+  background-image: 
+    linear-gradient(to right, var(--line-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+}
+
+/* Scanline effect for extra futurism */
+.scanline {
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+  background-size: 100% 4px;
+  position: fixed;
+  pointer-events: none;
+  inset: 0;
+  z-index: 50;
+  opacity: 0.15;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(162, 162, 162);
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://umeshnagare.com
+
+# Sitemaps
+Sitemap: https://umeshnagare.com/sitemap.xml
